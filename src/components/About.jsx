@@ -15,7 +15,7 @@ const About = () => {
             <p>Hi I'm Odnel, please take a look around.</p>
           </div>
           <div>
-            <p>About me here!!</p>
+            <p>About me here!! Testing</p>
           </div>
         </div>
       </div>
