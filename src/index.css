@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theming colors: 
+navy: #031b28 
+lighter: #0b2b3b
+083248 - turq?
+8c0e0f - redish
+e89c31 - gold
+dba858 - burnt orange type
+copper: #B87333
+*/
+
+body {
+    @apply bg-[#031b28] text-gray-400;
+}
+
+li {
+    @apply cursor-pointer;
+}
