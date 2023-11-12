@@ -13,7 +13,7 @@ const SocialIcons = () => {
                 <a href="https://github.com/otrumbore/" target="_blank" className='flex justify-between items-center w-full '>GitHub <FaGithub size={30} /></a>
             </li>
             <li className='w-[160px] h-[50px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#98ff98] p-4 pl-6 rounded-md text-black'>
-                <a href="/" className='flex justify-between items-center w-full '>E-Mail <HiOutlineMail size={30} /></a>
+                <a href="mailto: otrumbore@gmail.com" className='flex justify-between items-center w-full '>E-Mail <HiOutlineMail size={30} /></a>
             </li>
         </ul>
     </div>
