@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { BsSun, BsMoon} from 'react-icons/bs';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [navState, setNavState] = useState(false);
 
@@ -20,7 +20,7 @@ const Navbar = () => {
             <li className='hover:text-[#37cdbe] hover:border-b-2 border-[#37cdbe] hover:animate-pulse duration-75'>Contact</li>
         </ul>
         <div className={`flex ml-4 space-x-4 ${navState ? 'hidden' : ''}`}>
-            <button className='text-3xl hover:text-[#37cdbe] lg:hover:animate-pulse duration-75'><BsSun /></button>
+            <button onClick={props.toggleDarkMode} className='hidden text-3xl hover:text-[#37cdbe] lg:hover:animate-pulse duration-75'><BsSun /></button>
             <button className="border-2 border-[#37cdbe] hover:bg-[#37cdbe] hover:text-gray-800 font-bold py-2 px-4 rounded-lg inline-flex items-center lg:hover:animate-bounce ease-in-out duration-75">
                 <span className='hidden md:flex'>Resume</span>
                 <span className='md:hidden'>CV</span>

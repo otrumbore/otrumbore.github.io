@@ -6,9 +6,18 @@ import About from './components/About';
 
 function App() {
 
+  const [darkMode, setDarkMode] = useState(true);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  }
+
   return (
     <>
-      <Header />
+      <Header 
+        darkMode={darkMode} 
+        toggleDarkMode={toggleDarkMode} 
+      />
       <Home />
       <SocialIcons />
       <About />
