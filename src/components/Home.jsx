@@ -4,9 +4,10 @@ import {HiArrowNarrowRight} from 'react-icons/hi';
 
 const Home = () => {
   return (
-    <div name="home" className='w-full h-screen'>
+    <div name="home" className='w-full h-screen mt-28 lg:mt-0'>
 
-      <div className='max-w-[980px] mx-auto px-8 flex flex-col justify-center h-full'>
+      <div className='max-w-[1100px] mx-auto px-8 flex flex-col lg:flex-row lg:space-x-20 items-center justify-center h-full'>
+        <div className='flex-auto'>
         <p className='text-[#37cdbe] text-lg md:text-xl'>Hi there, I am</p>
         <h1 className='text-4xl md:text-5xl lg:text-6xl  font-bold text-[#ccd6f6]'>Odnel Trumbore</h1>
         <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-[#8892b0]'>I'm a Frontend Devloper</h2>
@@ -20,7 +21,10 @@ const Home = () => {
           <span className='lg:group-hover:rotate-90 duration-300'><HiArrowNarrowRight className='ml-3'/></span>
           </button>
         </div>
-        <img src={Avatar} alt="Avatar" className='hidden lg:hidden w-[150px] lg:w-[200px] m-6 p-4 h-auto transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-150 duration-300' />
+        </div>
+        <div className='flex-auto'>
+        <img src={Avatar} alt="Avatar" className='w-[300px] lg:w-[500px] lg:mt-[-100px] h-auto transition ease-in-out delay-50 lg:hover:-translate-y-1 lg:hover:scale-150 duration-300' />
+        </div>
       </div>
 
     </div>
