@@ -1,5 +1,7 @@
 import React from 'react'
 
+//change github remote
+
 const About = () => {
   return (
     <div name="about" className='w-full h-screen'>
@@ -15,7 +17,7 @@ const About = () => {
             <p>Hi I'm Odnel, please take a look around.</p>
           </div>
           <div>
-            <p>About me here!! I'm on github!!</p>
+            <p>About me here!!</p>
           </div>
         </div>
       </div>
