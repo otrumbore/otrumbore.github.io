@@ -4,6 +4,7 @@ import Home from './components/Home';
 import SocialIcons from './components/SocialIcons';
 import About from './components/About';
 import { FaStepForward } from 'react-icons/fa';
+import Skills from './components/Skills';
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
       <Home />
       <SocialIcons />
       <About />
+      <Skills />
     </>
   )
 }

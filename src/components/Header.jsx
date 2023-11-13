@@ -13,11 +13,13 @@ const Header = (props) => {
       
       {/*Logo and name */}
       <div className='flex items-center'>
-      {props.darkMode ? (
-        <img src={LogoWhite} alt="Logo" className='lg:w-[85px] lg:h-auto w-[75px] h-auto lg:hover:animate-spin duration-300'/>
+        <a href="/">
+        {props.darkMode ? (
+        <img src={LogoWhite} alt="Logo" className='lg:w-[85px] w-[75px] h-auto delay-100 lg:hover:animate-spin duration-300'/>
       ) : (
-        <img src={LogoDark} alt="Logo" className='lg:w-[85px] lg:h-auto w-[75px] h-auto lg:hover:animate-spin duration-300'/>
+        <img src={LogoDark} alt="Logo" className='lg:w-[85px] w-[75px] h-auto lg:hover:animate-pulse duration-300'/>
       )}
+        </a>
         <span className='hidden md:flex ml-4 text-2xl'>Odnel Trumbore</span>
       </div>
 
