@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div name="home" className='w-full min-h-screen mt-[180px] landscape:mt-[100px] lg:landscape:mt-0 lg:h-screen lg:mt-0'>
 
-      <div className='max-w-[1100px] mx-auto px-8 flex flex-col lg:flex-row lg:space-x-20 items-center justify-center h-full'>
+      <div className='max-w-[1100px] mx-auto px-8 flex flex-col lg:flex-row lg:space-x-5 items-center justify-center h-full'>
         <div className='flex-auto'>
         <p className='dark:text-[#37cdbe] text-[#031b28] text-lg md:text-xl'>Hi there, I am</p>
         <h1 className='text-4xl md:text-5xl lg:text-6xl  font-bold text-[#000080] dark:text-[#ccd6f6]'>Odnel Trumbore</h1>
