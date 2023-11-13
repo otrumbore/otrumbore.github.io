@@ -9,7 +9,7 @@ const Header = (props) => {
 
   return (
 
-    <div className='fixed w-full h-[80px] top-0 right-0 left-0 flex justify-between items-center px-4 dark:bg-[#031b28] bg-[#ccebfb] dark:text-gray-300 bg-opacity-80'>
+    <div className='fixed w-full h-[80px] top-0 right-0 left-0 flex justify-between items-center px-4 bg-opacity-80 dark:bg-[#031b28] bg-[#F0F0E7] dark:text-gray-300 dark:bg-opacity-80'>
       
       {/*Logo and name */}
       <div className='flex items-center'>
@@ -23,7 +23,7 @@ const Header = (props) => {
 
       {/* Navbar */}
       <Navbar
-        darkMode={props.darkMode} 
+        darkMode={props.darkMode}
         toggleDarkMode={props.toggleDarkMode}
       />
     </div>

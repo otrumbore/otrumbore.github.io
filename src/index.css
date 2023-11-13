@@ -13,7 +13,7 @@ copper: #B87333
 */
 
 body {
-    @apply dark:bg-[#031b28] bg-[#ccebfb] dark:text-gray-400 text-gray-700;
+    @apply dark:bg-[#031b28] bg-[#F0F0E7] dark:text-gray-400 text-gray-700;
 }
 
 li {
