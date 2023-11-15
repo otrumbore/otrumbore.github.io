@@ -3,11 +3,11 @@ import { Tooltip } from 'react-tooltip';
 import {BsGithub, BsThreeDots} from 'react-icons/bs';
 import {AiFillHtml5} from 'react-icons/ai';
 import {BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoNodejs, BiLogoMongodb} from 'react-icons/bi';
-import {TbBrandVscode} from 'react-icons/tb';
+import {TbBrandVscode, TbBrandFigma} from 'react-icons/tb';
 
 const Skills = () => {
   return (
-    <div name="skills" className='w-full  h-screen'>
+    <div name="skills" className='w-full h-screen mt-[-20%] landscape:mt-[10%]'>
         <div className='flex flex-col items-center justify-center px-8'>
             <div className='flex flex-row max-w-[1000px] w-full'>
                 <div className='w-[100%] md:w-5/12 pb-10'>
@@ -17,7 +17,7 @@ const Skills = () => {
             </div>
             <div className='max-w-[1000px] w-full flex flex-col md:flex-row space-y-5 md:space-x-5 md:space-y-0'>
                 <div className='md:w-5/12 text-lg lg:text-xl font-bold'>
-                    <p>Skills and products I know and enjoy...</p>
+                    <p>&lt;!-- Juciy stuff we love --&gt;</p>
                 </div>
                 <div className='hidden md:block md:w-7/12'>
                 </div>
@@ -43,8 +43,17 @@ const Skills = () => {
                     data-tooltip-content="MongoDB" data-tooltip-place="top"><Tooltip id="mongo-tip" /><BiLogoMongodb size={50} /></div>
                 <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="vs-tip"
                     data-tooltip-content="VS Code" data-tooltip-place="top"><Tooltip id="vs-tip" /><TbBrandVscode size={50} /></div>
+                    <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="figma-tip"
+                    data-tooltip-content="Figma" data-tooltip-place="top"><Tooltip id="figma-tip" /><TbBrandFigma size={50} /></div>
                 <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="more-tip"
                     data-tooltip-content="And more..." data-tooltip-place="top"><Tooltip id="more-tip" /><BsThreeDots size={50} /></div>
+            </div>
+        </div>
+        <div className='flex flex-cols px-8 items-center justify-center'>
+            <div className='max-w-[1000px] w-full mt-10 flex md:flex-row'>
+                <div className='text-lg lg:text-xl font-bold'>
+                    <p>&lt;!-- End juciy stuff --&gt;</p>
+                </div>
             </div>
         </div>
     </div>

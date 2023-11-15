@@ -11,7 +11,7 @@ const Navbar = (props) => {
     }
 
   return (
-    <div className='inline-flex items-center'>
+    <div className='inline-flex items-center z-10'>
         <ul className='hidden lg:flex text-1xl space-x-5'>
             <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>Home</li>
             <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>About Me</li>
@@ -31,7 +31,7 @@ const Navbar = (props) => {
         </div>
         <button onClick={handleNavClick} className='flex ml-4 text-3xl z-10 lg:hidden'>{!navState ? <FaBars /> : <FaTimes />}</button>
         <div className={navState ? ' ease-linear duration-300' : 'hidden'}>
-            <ul className='absolute text-2xl top-0 right-0 w-[50%] h-screen dark:bg-[#083248] bg-[#1196de] bg-opacity-90 flex flex-col justify-start items-center space-y-6 pt-24 rounded-l-xl'>
+            <ul className='absolute text-2xl top-0 right-0 w-[50%] h-screen dark:bg-[#083248] bg-[#1196de] dark:bg-opacity-90 bg-opacity-90 flex flex-col justify-start items-center space-y-6 pt-24 rounded-l-xl'>
                 <li className=''>Home</li>
                 <li className=''>About Me</li>
                 <li className=''>Skills</li>

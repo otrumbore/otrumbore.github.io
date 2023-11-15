@@ -13,7 +13,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
-    "react-tooltip": "^5.23.0"
+    "react-tooltip": "^5.23.0",
+    "three": "^0.158.0",
+    "vanta": "github:tengbao/vanta"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

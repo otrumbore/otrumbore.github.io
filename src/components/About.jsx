@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div name="about" className='w-full h-screen'>
+    <div name="about" className='snap-x w-full h-screen lg:mt-[10%] landscape:mt-[10%] lg:mb-[-15%]'>
       <div className='flex flex-col items-center justify-center px-8 md:space-x-5'>
         <div className='flex flex-row max-w-[1000px] w-[100%]'>
           <div className='w-[100%] md:w-5/12 pb-10 md:text-right'>
