@@ -60,8 +60,8 @@ function App() {
         toggleDarkMode={toggleDarkMode} 
       />
       <Home />
-      </div>
       <SocialIcons />
+      </div>
       <About />
       <Skills />
       {/* <Projects />
