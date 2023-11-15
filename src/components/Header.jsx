@@ -29,7 +29,8 @@ const Header = (props) => {
 
   return (
 
-    <div className={`fixed w-full h-[80px] top-0 right-0 left-0 flex justify-between items-center px-4 dark:bg-[#031b28] bg-[#F0F0E7] dark:text-gray-300 transition ease-in-out duration-700 dark:bg-opacity-${isScrolled ? '80' : '0'} bg-opacity-${isScrolled ? '80' : '0'}`}>
+    <div className={`fixed w-full h-[80px] top-0 right-0 left-0 flex justify-between items-center px-4 dark:bg-[#031b28] bg-[#F0F0E7] dark:text-gray-300 
+    transition ease-in-out duration-700 ${isScrolled ? 'dark:bg-opacity-80' : 'dark:bg-opacity-0'} bg-opacity-${isScrolled ? 'dark:bg-opacity-80' : 'dark:bg-opacity-0'}`}>
       
       {/*Logo and name */}
       <div className='flex items-center'>
