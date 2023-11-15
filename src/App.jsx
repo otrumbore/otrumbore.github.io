@@ -53,7 +53,7 @@ function App() {
 
   return (
     <>
-      <div className='w-full h-screen absolute top-0 left-0 z-0'></div>
+      <div id='app' className='w-full h-screen items-center justify-center z-0'></div>
       <div className='z-10 relative'>
       <Header 
         darkMode={darkMode} 
