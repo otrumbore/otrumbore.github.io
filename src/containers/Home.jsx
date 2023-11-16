@@ -1,6 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react'
 import Avatar from '../assets/hi.png'
 import {HiArrowNarrowRight} from 'react-icons/hi';
+import Buttons from '../components/Buttons';
 
 const Home = () => {
 
@@ -18,9 +19,9 @@ const Home = () => {
           skills through certifications and course studies. 
         </p>
         <div className='lg:py-4'>
-          <button className="group border-2 dark:border-[#0ff] dark:hover:bg-[#0ff] border-[#000080] hover:bg-[#000080] hover:text-gray-300 ease-in-out duration-75 dark:hover:text-gray-800 font-bold py-3 px-6 rounded-lg flex items-center lg:hover:animate-pulse lg:hover:duration-200 dark:hover:border-black">View Work
-          <span className='lg:group-hover:rotate-90 duration-300'><HiArrowNarrowRight className='ml-3'/></span>
-          </button>
+          <Buttons onClick={null} style={'group px-8 py-4'}>
+            View Work<span className='lg:group-hover:rotate-90 duration-300'><HiArrowNarrowRight className='ml-3'/></span>
+          </Buttons>
         </div>
         </div>
         <div className='flex-auto'>

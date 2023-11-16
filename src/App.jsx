@@ -1,12 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
-import Home from './components/Home';
+import Home from './containers/Home';
 import SocialIcons from './components/SocialIcons';
-import About from './components/About';
+import About from './containers/About';
 import { FaStepForward } from 'react-icons/fa';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
+import Skills from './containers/Skills';
+import Contact from './containers/Contact';
+import Projects from './containers/Projects';
 
 function App() {
 

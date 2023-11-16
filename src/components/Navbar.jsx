@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { BsSun, BsMoon, BsFillSunFill, BsFillMoonFill} from 'react-icons/bs';
+import Buttons from './Buttons';
 
 const Navbar = (props) => {
 
@@ -23,11 +24,11 @@ const Navbar = (props) => {
             <button onClick={props.toggleDarkMode} className='text-3xl group dark:hover:text-[#0ff] hover:text-[#000080] hover:scale-125 lg:hover:animate-pulse duration-75 hover:shadow-none'>
                 {props.darkMode ? <BsSun className='group-hover:hidden'/> : <BsMoon className='group-hover:hidden'/>}{props.darkMode ? <BsFillSunFill className='hidden group-hover:block'/> : <BsFillMoonFill className='hidden group-hover:block'/>}
             </button>
-            <button className="border-2 dark:border-[#0ff] dark:hover:bg-[#0ff] dark:hover:text-gray-800 border-[#000080] hover:bg-[#000080] hover:text-gray-300 font-bold py-2 px-4 rounded-lg inline-flex items-center lg:hover:animate-pulse duration-200 dark:hover:border-black">
+            <Buttons style={null} onClick={null}>
                 <span className='hidden md:flex'>Resume</span>
                 <span className='md:hidden'>CV</span>
                 <svg className="fill-current w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-            </button>
+            </Buttons>
         </div>
         <button onClick={handleNavClick} className='flex ml-4 text-3xl z-10 lg:hidden'>{!navState ? <FaBars /> : <FaTimes />}</button>
         <div className={navState ? ' ease-linear duration-300' : 'hidden'}>
