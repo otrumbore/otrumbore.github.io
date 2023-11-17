@@ -7,6 +7,7 @@ import { FaStepForward } from 'react-icons/fa';
 import Skills from './containers/Skills';
 import Contact from './containers/Contact';
 import Projects from './containers/Projects';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
       <Skills />
       <Projects />
       {/* <Contact /> */}
+      <Footer />
     </>
   )
 }
