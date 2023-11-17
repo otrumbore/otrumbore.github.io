@@ -17,7 +17,7 @@ const Skills = () => {
             </div>
             <div className='max-w-[1000px] w-full flex flex-col md:flex-row space-y-5 md:space-x-5 md:space-y-0'>
                 <div className='md:w-5/12 text-lg lg:text-xl font-bold'>
-                    <p>&lt;!-- Juciy stuff we love --&gt;</p>
+                    <p>&lt;!-- Juicy stuff we love --&gt;</p>
                 </div>
                 <div className='hidden md:block md:w-7/12'>
                 </div>
@@ -52,7 +52,7 @@ const Skills = () => {
         <div className='flex flex-cols px-8 items-center justify-center'>
             <div className='max-w-[1000px] w-full mt-10 flex md:flex-row'>
                 <div className='text-lg lg:text-xl font-bold'>
-                    <p>&lt;!-- End juciy stuff --&gt;</p>
+                    <p>&lt;!-- End juicy stuff --&gt;</p>
                 </div>
             </div>
         </div>

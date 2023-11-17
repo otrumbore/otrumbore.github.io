@@ -48,6 +48,7 @@ const Header = (props) => {
       <Navbar
         darkMode={props.darkMode}
         toggleDarkMode={props.toggleDarkMode}
+        isScrolled={isScrolled}
       />
     </div>
   )

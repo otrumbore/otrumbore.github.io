@@ -24,7 +24,7 @@ const Home = () => {
           </Buttons>
         </div>
         </div>
-        <div className='flex-auto'>
+        <div className='flex-auto' id="home-img">
         <img src={Avatar} alt="Avatar" className='hidden lg:flex ml-20 border border-black border-opacity-0 rounded-e-full w-[500px] lg:mt-[-0px] h-auto ease-in-out delay-100 lg:hover:rotate-12 duration-300' />
         </div>
       </div>
