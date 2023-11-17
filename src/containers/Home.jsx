@@ -6,7 +6,7 @@ import Buttons from '../components/Buttons';
 const Home = () => {
 
   return (
-    <div name="home" className='w-full h-screen mt-[160px] lg:mt-[0px] z-10'>
+    <div name="home" className='w-full h-screen mt-[160px] lg:mt-0 z-10'>
 
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col lg:flex-row lg:space-x-5 items-center justify-center h-full' id="home-element">
         <div className='flex-auto'>

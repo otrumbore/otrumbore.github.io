@@ -7,7 +7,7 @@ import {TbBrandVscode, TbBrandFigma} from 'react-icons/tb';
 
 const Skills = () => {
   return (
-    <div name="skills" className='w-full h-screen mt-[-20%] landscape:mt-[10%]'>
+    <div name="skills" className='w-full h-screen md:h-full'>
         <div className='flex flex-col items-center justify-center px-8'>
             <div className='flex flex-row max-w-[1000px] w-full'>
                 <div className='w-[100%] md:w-5/12 pb-10'>
