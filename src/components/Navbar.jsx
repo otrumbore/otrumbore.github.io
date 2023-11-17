@@ -30,7 +30,7 @@ const Navbar = (props) => {
                 <svg className="fill-current w-4 h-4 ml-2 animate-bounce duration-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
             </Buttons>
         </div>
-        <button onClick={handleNavClick} className='flex ml-4 text-3xl z-10 lg:hidden'>{!navState ? <FaBars /> : <FaTimes />}</button>
+        <button onClick={handleNavClick} className='flex text-3xl z-10 lg:hidden ml-4'>{!navState ? <FaBars /> : <FaTimes />}</button>
         <div className={navState ? ' ease-linear duration-300' : 'hidden'}>
             <ul className='absolute text-2xl top-0 right-0 w-[50%] h-screen dark:bg-[#083248] bg-[#1196de] dark:bg-opacity-90 bg-opacity-90 flex flex-col justify-start items-center space-y-6 pt-24 rounded-l-xl'>
                 <li className=''>Home</li>

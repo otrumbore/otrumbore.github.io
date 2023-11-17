@@ -32,11 +32,11 @@ button {
 .dark button:hover {
     transition: all;
     transition-duration: 300ms;
-    box-shadow: 0px 0px 20px 20px #0ff;
+    /* box-shadow: 0px 0px 20px 20px #0ff; */
 }
 
 button:hover {
     transition: all;
     transition-duration: 300ms;
-    box-shadow: 0px 0px 20px 20px #000080;
+    /* box-shadow: 0px 0px 20px 20px #000080; */
 }
