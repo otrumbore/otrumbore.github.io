@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    @apply border-2 dark:border-[#0ff] border-[#000080] dark:bg-slate-600 bg-neutral-200;
+  /* border: 2px solid #0ff; */
+  -webkit-text-fill-color: white;
+  /* -webkit-box-shadow: 0 0 0px 1000px #253341 inset; */
+  /* box-shadow: 0 0 0px 1000px #475569 inset; */
+  transition: background-color 5000s ease-in-out 0s;
+  color: white;
+}
+
 /* Theming colors: 
 navy: #031b28 
 lighter: #0b2b3b
