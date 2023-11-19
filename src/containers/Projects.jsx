@@ -18,7 +18,7 @@ const Projects = () => {
             className='border-2 rounded-2xl w-[300px] h-auto hover:scale-150 transition-all duration-300'/>
             <p>This portfolio</p>
             <p>Description</p>
-            <Buttons style='float-left'>View Code</Buttons>
+            <Buttons style='float-left' onClick={'http://www.github.com/otrumbore/portfolio'}>View Code</Buttons>
             <button className='border-2 py-2 px-4 border-gray-500 bg-gray-500 float-right rounded-lg text-white' disabled>View Demo</button>
           </div>
           <div className='w-[300px] items-center justify-center space-y-4'>
@@ -27,7 +27,7 @@ const Projects = () => {
             <p>Project 2</p>
             <p>Description</p>
             <div className=''>
-              <Buttons style='float-left'>View Code</Buttons>
+              <Buttons style='float-left' onClick={'http://www.github.com/otrumbore'}>View Code</Buttons>
               <Buttons style='float-right'>View Demo</Buttons>
             </div>
           </div>

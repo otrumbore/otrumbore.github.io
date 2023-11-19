@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { BsSun, BsMoon, BsFillSunFill, BsFillMoonFill} from 'react-icons/bs';
 import Buttons from './Buttons';
+import { Link } from 'react-scroll';
 
 const Navbar = (props) => {
 
@@ -14,11 +15,31 @@ const Navbar = (props) => {
   return (
     <div className='inline-flex items-center z-10'>
         <ul className='hidden lg:flex text-1xl space-x-5'>
-            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>Home</li>
-            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>About Me</li>
-            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>Skills</li>
-            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>Projects</li>
-            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>Contact</li>
+            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>
+                <Link to='home' smooth={true} duration={300} offset={0}>
+                    Home
+                </Link>
+            </li>
+            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>
+                <Link to='about' smooth={true} duration={300} offset={-200}>
+                    About Me
+                </Link>
+            </li>
+            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>
+                <Link to='skills' smooth={true} duration={300} offset={-200}>
+                    Skills
+                </Link>
+            </li>
+            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>
+                <Link to='projects' smooth={true} duration={300} offset={-200}>
+                    Projects
+                </Link>
+            </li>
+            <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>
+                <Link to='contact' smooth={true} duration={300} offset={-100}>
+                    Contact
+                </Link>
+            </li>
         </ul>
         <div className={`flex ml-4 space-x-4 ${navState ? 'hidden' : ''}`}>
             <button onClick={props.toggleDarkMode} className='text-3xl group dark:hover:text-[#0ff] hover:text-[#000080] hover:scale-125 lg:hover:animate-pulse duration-75 hover:shadow-none dark:hover:shadow-none'>
@@ -33,11 +54,31 @@ const Navbar = (props) => {
         <button onClick={handleNavClick} className='flex text-3xl z-10 lg:hidden ml-4'>{!navState ? <FaBars /> : <FaTimes />}</button>
         <div className={navState ? ' ease-linear duration-300' : 'hidden'}>
             <ul className='absolute text-2xl top-0 right-0 w-[50%] h-screen dark:bg-[#083248] bg-[#1196de] dark:bg-opacity-90 bg-opacity-90 flex flex-col justify-start items-center space-y-6 pt-24 rounded-l-xl'>
-                <li className=''>Home</li>
-                <li className=''>About Me</li>
-                <li className=''>Skills</li>
-                <li className=''>Projects</li>
-                <li className=''>Contact</li>
+                <li className=''>
+                    <Link to='home' smooth={true} duration={300} offset={-200}>
+                        Home
+                    </Link>
+                </li>
+                <li className=''>
+                    <Link to='about' smooth={true} duration={300} offset={-150}>
+                        About Me
+                    </Link>
+                </li>
+                <li className=''>
+                    <Link to='skills' smooth={true} duration={300} offset={-150}>
+                        Skills
+                    </Link>
+                </li>
+                <li className=''>
+                    <Link to='projects' smooth={true} duration={300} offset={-220}>
+                        Projects
+                    </Link>
+                </li>
+                <li className=''>
+                    <Link to='contact' smooth={true} duration={300} offset={-50}>
+                        Contact
+                    </Link>
+                </li>
             </ul>
         </div>
     </div>

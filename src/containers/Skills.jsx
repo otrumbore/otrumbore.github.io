@@ -3,7 +3,7 @@ import { Tooltip } from 'react-tooltip';
 import {BsGithub, BsThreeDots} from 'react-icons/bs';
 import {AiFillHtml5} from 'react-icons/ai';
 import {BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoNodejs, BiLogoMongodb} from 'react-icons/bi';
-import {TbBrandVscode, TbBrandFigma} from 'react-icons/tb';
+import {TbBrandVscode, TbBrandFigma, TbBrandVite} from 'react-icons/tb';
 
 const Skills = () => {
   return (
@@ -41,8 +41,8 @@ const Skills = () => {
                     data-tooltip-content="Node.js" data-tooltip-place="top"><Tooltip id="node-tip" /><BiLogoNodejs size={50} /></div>
                 <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="mongo-tip"
                     data-tooltip-content="MongoDB" data-tooltip-place="top"><Tooltip id="mongo-tip" /><BiLogoMongodb size={50} /></div>
-                <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="vs-tip"
-                    data-tooltip-content="VS Code" data-tooltip-place="top"><Tooltip id="vs-tip" /><TbBrandVscode size={50} /></div>
+                <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="vite-tip"
+                    data-tooltip-content="Vite" data-tooltip-place="top"><Tooltip id="vite-tip" /><TbBrandVite size={50} /></div>
                     <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="figma-tip"
                     data-tooltip-content="Figma" data-tooltip-place="top"><Tooltip id="figma-tip" /><TbBrandFigma size={50} /></div>
                 <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="more-tip"
