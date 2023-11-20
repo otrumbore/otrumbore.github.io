@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Tooltip } from 'react-tooltip';
 import {BsGithub, BsThreeDots} from 'react-icons/bs';
 import {AiFillHtml5} from 'react-icons/ai';
@@ -6,6 +6,13 @@ import {BiLogoCss3, BiLogoJavascript, BiLogoReact, BiLogoTailwindCss, BiLogoNode
 import {TbBrandVscode, TbBrandFigma, TbBrandVite} from 'react-icons/tb';
 
 const Skills = () => {
+
+    const [moreSkills, setMoreSkills] = useState(false);
+
+    const toggleMoreSkills = () => {
+        setMoreSkills(!moreSkills);
+    }
+
   return (
     <div name="skills" className='w-full h-screen md:h-full'>
         <div className='flex flex-col items-center justify-center px-8'>
@@ -45,12 +52,31 @@ const Skills = () => {
                     data-tooltip-content="Vite" data-tooltip-place="top"><Tooltip id="vite-tip" /><TbBrandVite size={50} /></div>
                     <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="figma-tip"
                     data-tooltip-content="Figma" data-tooltip-place="top"><Tooltip id="figma-tip" /><TbBrandFigma size={50} /></div>
-                <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="more-tip"
+                <div onClick={toggleMoreSkills} className='flex cursor-pointer justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="more-tip"
                     data-tooltip-content="And more..." data-tooltip-place="top"><Tooltip id="more-tip" /><BsThreeDots size={50} /></div>
             </div>
         </div>
-        <div className='flex flex-cols px-8 items-center justify-center'>
+        <div className={`hidden ${
+          !moreSkills
+            ? 'transition-all ease-in duration-300 transform -translate-y-full opacity-0'
+            : 'transition-all ease-out duration-300 transform translate-y-10 opacity-100'
+        } flex w-full bg-gray-500 p-4`}>
             <div className='max-w-[1000px] w-full mt-10 flex md:flex-row'>
+                <div className='text-lg lg:text-xl font-bold'>
+                    <p className='mb-5'>You found more...</p>
+                    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center max-w-[1000px] w-[100%] gap-x-12 md:gap-x-16 gap-y-8'>
+                <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl' data-tooltip-id="html5-tip"
+                    data-tooltip-content="HTML5" data-tooltip-place="top"><Tooltip id="html5-tip" /><AiFillHtml5 size={50} /></div>
+                <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl' data-tooltip-id="css-tip"
+                    data-tooltip-content="CSS3" data-tooltip-place="top"><Tooltip id="css-tip" /><BiLogoCss3 size={50} /></div>
+                <div className='flex justify-center py-4 border-4 border-[#000080] dark:border-[#37cdbe] hover:ease-in-out duration-300 hover:scale-125 rounded-2xl'  data-tooltip-id="js-tip"
+                    data-tooltip-content="Javascript" data-tooltip-place="top"><Tooltip id="js-tip" /><BiLogoJavascript size={50} /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className='flex flex-cols px-8 items-center justify-center'>
+            <div className='max-w-[1000px] w-full mt-20 flex md:flex-row'>
                 <div className='text-lg lg:text-xl font-bold'>
                     <p>&lt;!-- End juicy stuff --&gt;</p>
                 </div>
