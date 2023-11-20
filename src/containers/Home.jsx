@@ -7,17 +7,20 @@ import { Link } from 'react-scroll';
 const Home = () => {
 
   return (
-    <div name="home" className='w-full h-screen mt-[160px] lg:mt-0 z-10'>
+    <div name="home" className='w-full h-screen mt-[130px] lg:mt-0 z-10'>
 
       <div className='max-w-[1000px] mx-auto px-8 flex flex-col lg:flex-row lg:space-x-5 items-center justify-center h-full' id="home-element">
         <div className='flex-auto'>
-        <p className='dark:text-[#37cdbe] text-[#000080] text-lg md:text-xl'>Hi there, I am still working on this portfolio....</p>
+        <p className='dark:text-[#37cdbe] text-[#000080] text-lg md:text-xl'>Greetings! Welcome to my ever evolving portfolio!</p>
         <h1 className='text-4xl md:text-5xl lg:text-6xl  font-bold text-gray-800 dark:text-gray-100'>Odnel Trumbore</h1>
-        <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold dark:text-gray-300'>A Frontend Devloper</h2>
-        <p className='dark:text-white py-4 max-w-[700px] text-lg md:text-xl'>Highly-motivated employee with desire to take on new challenges. Strong 
-          worth ethic, adaptability and exceptional interpersonal skills. Adept at working effectively unsupervised and quickly mastering new skills. 
-          Expert in transferable skills such as coding, data analysis, or other technical skills with a strong commitment to learn and master additional 
-          skills through certifications and course studies. 
+        <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold dark:text-gray-300'>Frontend Developer Extraordinaire</h2>
+        <p className='dark:text-white py-4 max-w-[700px] text-lg md:text-xl'>
+        I'm driven by a passion for tackling new challenges head-on. With a robust work ethic, adaptability, and exceptional interpersonal finesse, 
+        I thrive in both collaborative environments and when working autonomously. My forte lies not only in frontend development 
+        but also in swiftly mastering new skills, be it coding, data analysis, or other technical expertise. 
+        <br />
+        <br />
+        Stay tuned as I continue crafting my journey of professional growth and technical excellence.
         </p>
         <Link to='projects' smooth={true} duration={300} offset={-50}>
         <div className='lg:py-4'>

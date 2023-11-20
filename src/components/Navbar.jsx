@@ -22,7 +22,7 @@ const Navbar = (props) => {
                 </Link>
             </li>
             <li className='dark:hover:text-[#37cdbe] hover:text-[#031b28] hover:border-b-2 hover:border-[#031b28] hover:scale-125 dark:border-[#37cdbe] hover:animate-pulse duration-75'>
-                <Link to='about' smooth={true} duration={300} offset={-200}>
+                <Link to='about' smooth={true} duration={300} offset={-150}>
                     About Me
                 </Link>
             </li>
@@ -60,17 +60,17 @@ const Navbar = (props) => {
         <div className={navState ? ' ease-linear duration-300' : 'hidden'}>
             <ul className='absolute text-2xl top-0 right-0 w-[50%] h-screen dark:bg-[#083248] bg-[#1196de] dark:bg-opacity-90 bg-opacity-90 flex flex-col justify-start items-center space-y-6 pt-24 rounded-l-xl'>
                 <li className=''>
-                    <Link to='home' onClick={handleNavClick} smooth={true} duration={300} offset={-200}>
+                    <Link to='home' onClick={handleNavClick} smooth={true} duration={300} offset={-100}>
                         Home
                     </Link>
                 </li>
                 <li className=''>
-                    <Link to='about' onClick={handleNavClick} smooth={true} duration={300} offset={-150}>
+                    <Link to='about' onClick={handleNavClick} smooth={true} duration={300} offset={-100}>
                         About Me
                     </Link>
                 </li>
                 <li className=''>
-                    <Link to='skills' onClick={handleNavClick} smooth={true} duration={300} offset={-150}>
+                    <Link to='skills' onClick={handleNavClick} smooth={true} duration={300} offset={-100}>
                         Skills
                     </Link>
                 </li>
@@ -80,7 +80,7 @@ const Navbar = (props) => {
                     </Link>
                 </li>
                 <li className=''>
-                    <Link to='contact' onClick={handleNavClick} smooth={true} duration={300} offset={-50}>
+                    <Link to='contact' onClick={handleNavClick} smooth={true} duration={300} offset={-40}>
                         Contact
                     </Link>
                 </li>
