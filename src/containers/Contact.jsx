@@ -1,6 +1,8 @@
 import React from 'react'
 import Buttons from '../components/Buttons'
 
+//this submit form uses getform.io as the end point
+
 const Contact = () => {
   return (
     <div name="contact" className='w-full h-screen flex justify-center p-8 items-center'>
