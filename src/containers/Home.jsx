@@ -2,6 +2,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import Avatar from '../assets/hi.png'
 import {HiArrowNarrowRight} from 'react-icons/hi';
 import Buttons from '../components/Buttons';
+import { Link } from 'react-scroll';
 
 const Home = () => {
 
@@ -18,11 +19,13 @@ const Home = () => {
           Expert in transferable skills such as coding, data analysis, or other technical skills with a strong commitment to learn and master additional 
           skills through certifications and course studies. 
         </p>
+        <Link to='projects' smooth={true} duration={300} offset={-50}>
         <div className='lg:py-4'>
-          <Buttons onClick={null} style={'group px-8 py-4'}>
-            View Work<span className='lg:group-hover:rotate-90 duration-300'><HiArrowNarrowRight className='ml-3'/></span>
-          </Buttons>
+            <Buttons style={'group px-8 py-4'}>
+              View Work<span className='lg:group-hover:rotate-90 duration-300'><HiArrowNarrowRight className='ml-3'/></span>
+            </Buttons>
         </div>
+        </Link>
         </div>
         <div className='flex-auto'>
         <img src={Avatar} alt="Avatar" className='hidden lg:flex ml-20 border border-black border-opacity-0 rounded-e-full w-[500px] lg:mt-[-120px] h-auto ease-in-out delay-100 lg:hover:rotate-12 duration-300' />
