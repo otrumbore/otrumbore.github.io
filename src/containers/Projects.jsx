@@ -49,7 +49,7 @@ const Projects = () => {
 							src={realestateCover}
 							className='border-2 rounded-2xl w-[300px] h-[200px] hover:scale-150 transition-all duration-300'
 						/>
-						<p className='font-bold text-xl'>Real Estate</p>
+						<p className='font-bold text-xl'>Real Estate / In Progress</p>
 						<p>
 							Using Axios, pulls API data from MLS Router, demo version, to
 							display results in app. No demo active at this time!
