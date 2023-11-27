@@ -25,8 +25,11 @@ const Projects = () => {
 							src={portCover}
 							className='border-2 rounded-2xl w-[300px] h-auto hover:scale-150 transition-all duration-300'
 						/>
-						<p>This Portfolio</p>
-						<p>A place for me to list off my skills and project history</p>
+						<p className='text-xl font-bold'>This Portfolio</p>
+						<p>
+							This sites code. Portfolio used to showcase skills and projects
+						</p>
+						<p>Stack used: React, Tailwind, React Scroll, and more</p>
 						<Buttons
 							style='float-left'
 							onClick={'http://www.github.com/otrumbore/portfolio'}
@@ -46,7 +49,7 @@ const Projects = () => {
 							src={realestateCover}
 							className='border-2 rounded-2xl w-[300px] h-[200px] hover:scale-150 transition-all duration-300'
 						/>
-						<p>Real Estate</p>
+						<p className='font-bold text-xl'>Real Estate</p>
 						<p>
 							Using Axios, pulls API data from MLS Router, demo version, to
 							display results in app. No demo active at this time!
