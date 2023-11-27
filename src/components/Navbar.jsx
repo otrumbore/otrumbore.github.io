@@ -80,7 +80,7 @@ const Navbar = (props) => {
 				{!navState ? <FaBars /> : <FaTimes />}
 			</button>
 			<div className={navState ? ' ease-linear duration-300' : 'hidden'}>
-				<ul className='absolute text-2xl top-0 right-0 w-[50%] h-screen dark:bg-[#083248] bg-[#1196de] dark:bg-opacity-90 bg-opacity-90 flex flex-col justify-start items-center space-y-6 pt-24 rounded-l-xl'>
+				<ul className='absolute text-2xl top-0 right-0 w-[50%] h-screen dark:bg-[#083248] bg-[#cacac2] dark:bg-opacity-90 bg-opacity-90 flex flex-col justify-start items-center space-y-6 pt-24 rounded-l-xl'>
 					<li className=''>
 						<Link
 							to='home'
