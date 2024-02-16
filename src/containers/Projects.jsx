@@ -41,7 +41,7 @@ const Projects = () => {
 						</p>
 						<Buttons
 							style='float-left'
-							onClick={'http://www.github.com/otrumbore/realestate'}
+							onClick={'https://github.com/otrumbore/louisascraftycorner'}
 						>
 							View Code
 						</Buttons>
